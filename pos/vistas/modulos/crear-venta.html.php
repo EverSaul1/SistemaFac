@@ -80,7 +80,7 @@
                     
                     <span class="input-group-addon"><i class="fa fa-users"></i></span>
                     
-                    <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
+                    <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" >
 
                     <option value="">Seleccionar cliente</option>
 
