@@ -100,6 +100,7 @@
                   
 
                 </div>
+                <input type="hidden" id="listaProductos" name="listaProductos">
 
                 <!--=====================================
                 BOTÓN PARA AGREGAR PRODUCTO
@@ -117,41 +118,7 @@
                   
                   <div class="col-xs-6 pull-right">
                     
-                    <table class="table">
-
-                      <thead>
-
-                        <tr>
-                         
-                          <th>Total</th>      
-                        </tr>
-
-                      </thead>
-
-                      <tbody>
-                      
-                        <tr>
-                                              
-                                                                        
-
-                           <td style="width: 55%">
-                            
-                            <div class="input-group">
-                           
-                              <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
-
-                              <input type="number" min="1" class="form-control" id="nuevoTotalCompra" name="nuevoTotalCompra" placeholder="00000" readonly required>
-                              
-                        
-                            </div>
-
-                          </td>
-
-                        </tr>
-
-                      </tbody>
-
-                    </table>
+                 
 
                   </div>
 
@@ -163,34 +130,7 @@
                 ENTRADA MÉTODO DE PAGO
                 ======================================-->
 
-                <div class="form-group row">
-                  
-                  <div class="col-xs-4" style="padding-right:0px">
-                    
-                     <div class="input-group">
-                             
-                        
-      
-                        <button class="form-control" value="efectivo">Efectivo</button>
-                                       
-                     
-                    </div>
-
-                  </div>
-
-                  <div class="col-xs-6" style="padding-left:0px">
-                        
-                    <div class="input-group">
-                         
-                      <input type="text" class="form-control" id="nuevoCodigoTransaccion" name="nuevoCodigoTransaccion" placeholder="Monto"  required>
-                           
-                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                      
-                    </div>
-
-                  </div>
-
-                </div>
+                
 
                 <br>
       
@@ -200,11 +140,18 @@
 
           <div class="box-footer">
 
-            <button type="submit" class="btn btn-primary pull-right">Guardar venta</button>
+            <button type="submit" class="btn btn-primary pull-right">Agregar Stock</button>
 
           </div>
 
         </form>
+
+        <?php
+
+              $guardarStock = new ControladorCompras();
+              $guardarStock -> crtGuardarStock();
+        
+        ?>
 
         </div>
             

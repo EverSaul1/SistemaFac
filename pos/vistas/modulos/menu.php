@@ -78,7 +78,7 @@
 						<a href="#">
 							
 							<i class="fa fa-circle-o"></i>
-							<span>Administrar compras</span>
+							<span>Administrar Stock</span>
 
 						</a>
 
@@ -89,26 +89,13 @@
 						<a href="crear-compras">
 							
 							<i class="fa fa-circle-o"></i>
-							<span>Crear compras</span>
+							<span>Agregar stock</span>
 
 						</a>
 
 					</li>';
 
-					if($_SESSION["perfil"] == "Administrador"){
-
-					echo '<li>
-
-						<a href="reportes">
-							
-							<i class="fa fa-circle-o"></i>
-							<span>Reporte de compras</span>
-
-						</a>
-
-					</li>';
-
-					}
+				
 
 				
 

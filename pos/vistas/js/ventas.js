@@ -657,7 +657,7 @@ function listarProductos(){
 							  "total" : $(precio[i]).val()})
 
 	}
-
+	console.log("listaProductos", listaProductos);
 	$("#listaProductos").val(JSON.stringify(listaProductos)); 
 
 }
