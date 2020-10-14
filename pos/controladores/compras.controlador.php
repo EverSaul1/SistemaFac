@@ -22,11 +22,10 @@ class ControladorCompras{
                 $valor = $value["id"];
                 $orden = "id";
                 $traerProducto= ModeloProductos::mdlMostrarProductos($tablaProductos, $item, $valor, $orden);
-
                 
-                $item1a = "stock";
-                $valor1a = $value["stock"];
-                $nuevoStock = ModeloProductos::mdlActualizarProducto($tablaProductos, $item1a, $valor1a, $valor);
+                $itema1a = "stock";
+                $valora1a = $value["stock"];
+                $nuevoStocks = ModeloProductos::mdlActualizarProducto($tablaProductos, $itema1a, $valora1a, $valor);
 
                 
             }

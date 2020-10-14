@@ -100,7 +100,7 @@ $(".tablaCompras tbody").on("click", "button.agregarProducto", function(){
 
 				
 			)
-			listarProductos()  
+			listariDProductos()  
 		}
 
 	 })
@@ -151,10 +151,10 @@ $(".formularioCompras").on("change", "input.nuevaCantidadProducto", function(){
 	$(this).attr("nuevoStocks",nuevoStocks);
 
 	//if(Number($(this).val() > Number($(this).attr("stock")))
-	listarProductos()  
+	listariDProductos()  
 })
 
-function listarProductos(){
+function listariDProductos(){
 
 	var listaProductos = [];
 

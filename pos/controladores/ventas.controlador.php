@@ -31,7 +31,6 @@ class ControladorVentas{
 			if($_POST["listaProductos"] == ""){
 
 					echo'<script>
-
 				swal({
 					  type: "error",
 					  title: "La venta no se ha ejecuta si no hay productos",
@@ -39,12 +38,9 @@ class ControladorVentas{
 					  confirmButtonText: "Cerrar"
 					  }).then(function(result){
 								if (result.value) {
-
 								window.location = "ventas";
-
 								}
 							})
-
 				</script>';
 
 				return;
@@ -121,9 +117,7 @@ class ControladorVentas{
 			if($respuesta == "ok"){
 
 				echo'<script>
-
 				localStorage.removeItem("rango");
-
 				swal({
 					  type: "success",
 					  title: "La venta ha sido guardada correctamente",
@@ -131,12 +125,9 @@ class ControladorVentas{
 					  confirmButtonText: "Cerrar"
 					  }).then(function(result){
 								if (result.value) {
-
 								window.location = "ventas";
-
 								}
 							})
-
 				</script>';
 
 			}
@@ -296,9 +287,7 @@ class ControladorVentas{
 			if($respuesta == "ok"){
 
 				echo'<script>
-
 				localStorage.removeItem("rango");
-
 				swal({
 					  type: "success",
 					  title: "La venta ha sido editada correctamente",
@@ -306,12 +295,9 @@ class ControladorVentas{
 					  confirmButtonText: "Cerrar"
 					  }).then((result) => {
 								if (result.value) {
-
 								window.location = "ventas";
-
 								}
 							})
-
 				</script>';
 
 			}
@@ -443,7 +429,6 @@ class ControladorVentas{
 			if($respuesta == "ok"){
 
 				echo'<script>
-
 				swal({
 					  type: "success",
 					  title: "La venta ha sido borrada correctamente",
@@ -451,12 +436,9 @@ class ControladorVentas{
 					  confirmButtonText: "Cerrar"
 					  }).then(function(result){
 								if (result.value) {
-
 								window.location = "ventas";
-
 								}
 							})
-
 				</script>';
 
 			}		
@@ -519,7 +501,6 @@ class ControladorVentas{
 			header("Content-Transfer-Encoding: binary");
 
 			echo utf8_decode("<table border='0'> 
-
 					<tr> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td>
