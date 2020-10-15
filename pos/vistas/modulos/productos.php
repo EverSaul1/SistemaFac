@@ -123,7 +123,7 @@ MODAL AGREGAR PRODUCTO
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <select class="form-control input-lg" id="nuevaCategoria" name="nuevaCategoria" required>
+                <select class="form-control input-lg " id="nuevaCategoria" name="nuevaCategoria" required>
                   
                   <option value="">Selecionar categoría</option>
 

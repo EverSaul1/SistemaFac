@@ -4,7 +4,7 @@
     
     <h1>
       
-      Nueva Compra
+      Nueva Stock
     
     </h1>
 

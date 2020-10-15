@@ -61,7 +61,8 @@ if($_SESSION["perfil"] == "Especial"){
            <th>Documento ID</th>
            <th>Email</th>
            <th>Teléfono</th>
-           <th>Compras</th>
+           <th>Última compra</th>
+           
            <th>Acciones</th>
 
          </tr> 
@@ -92,7 +93,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                     <td>'.$value["telefono"].'</td>
 
-                    <td>'.$value["fecha"].'</td>
+                    <td>'.$value["ultima_compra"].'</td>
+
+                   
 
                     <td>
 
@@ -182,7 +185,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" required>
+                <input type="test" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" data-inputmask="'mask':'99999999'" data-mask  required>
 
               </div>
 
@@ -216,7 +219,17 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
-           
+            <!-- ENTRADA PARA LA DIRECCIÓN -->
+            
+
+             <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
+            
+            
+  
+          </div>
+
+        </div>
+
         <!--=====================================
         PIE DEL MODAL
         ======================================-->
@@ -298,7 +311,7 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="number" min="0" class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" required>
+                <input type="text"  class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" data-inputmask="'mask':'99999999'" data-mask  required>
 
               </div>
 
@@ -331,9 +344,15 @@ MODAL EDITAR CLIENTE
               </div>
 
             </div>
-      
-          </div>
-          </div>
+
+            <!-- ENTRADA PARA LA DIRECCIÓN -->
+            
+            
+
+             <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
+            
+            
+  
           </div>
 
         </div>
