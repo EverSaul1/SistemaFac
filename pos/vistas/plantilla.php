@@ -53,6 +53,8 @@ session_start();
   <!-- Morris chart -->
   <link rel="stylesheet" href="vistas/bower_components/morris.js/morris.css">
 
+  <link rel="stylesheet" href="vistas/dist/css/select2.css">
+
   <!--=====================================
   PLUGINS DE JAVASCRIPT
   ======================================-->
@@ -102,7 +104,7 @@ session_start();
   <!-- ChartJS http://www.chartjs.org/-->
   <script src="vistas/bower_components/Chart.js/Chart.js"></script>
 
-
+  <script src="vistas/dist/js/select2.js"></script>
 
 </head>
 

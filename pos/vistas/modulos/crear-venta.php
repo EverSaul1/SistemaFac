@@ -128,10 +128,11 @@ if($_SESSION["perfil"] == "Especial"){
                     
                     <span class="input-group-addon"><i class="fa fa-users"></i></span>
                     
-                    <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
-
+                    <select class="form-control select2" id="seleccionarCliente" name="seleccionarCliente" required>
+                    
                     <option value="">Seleccionar cliente</option>
-
+                                       
+                    
                     <?php
 
                       $item = null;
@@ -149,7 +150,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                     </select>
                     
-                    <span class="input-group-addon"><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
+                    <span class="input-group-addon">
+                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button>
+                    </span>
                   
                   </div>
                 
@@ -373,7 +376,8 @@ MODAL AGREGAR CLIENTE
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-user"></i></span> 
-
+                       
+                
                 <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar nombre" required>
 
               </div>
@@ -455,3 +459,4 @@ MODAL AGREGAR CLIENTE
   </div>
 
 </div>
+
