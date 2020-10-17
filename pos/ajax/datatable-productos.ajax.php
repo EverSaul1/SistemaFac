@@ -6,6 +6,9 @@ require_once "../modelos/productos.modelo.php";
 require_once "../controladores/categorias.controlador.php";
 require_once "../modelos/categorias.modelo.php";
 
+require_once "../controladores/proveedores.controlador.php";
+require_once "../modelos/proveedores.modelo.php";
+
 
 class TablaProductos{
 
@@ -46,7 +49,15 @@ class TablaProductos{
 		  	$item = "id";
 		  	$valor = $productos[$i]["id_categoria"];
 
-		  	$categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+			$categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+			  	/*=============================================
+ 	 		TRAEMOS LA CATEGORÍA
+  			=============================================*/ 
+
+		  	$item = "id";
+		  	$valor = $productos[$i]["id_proveedor"];
+
+		  	$proveedores = ControladorProveedores::ctrMostrarProveedores($item, $valor);
 
 		  	/*=============================================
  	 		STOCK
@@ -83,7 +94,8 @@ class TablaProductos{
 		 
 		  	$datosJson .='[
 			      "'.($i+1).'",
-			      "'.$imagen.'",
+				  "'.$imagen.'",
+				  "'.$proveedores["nombres"].'",
 			      "'.$productos[$i]["codigo"].'",
 			      "'.$productos[$i]["descripcion"].'",
 			      "'.$categorias["categoria"].'",

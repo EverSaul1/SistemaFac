@@ -57,6 +57,7 @@ if($_SESSION["perfil"] == "Vendedor"){
            
            <th style="width:10px">#</th>
            <th>Imagen</th>
+           <th>Proveedor</th>
            <th>Código</th>
            <th>Descripción</th>
            <th>Categoría</th>
@@ -137,6 +138,37 @@ MODAL AGREGAR PRODUCTO
                   foreach ($categorias as $key => $value) {
                     
                     echo '<option value="'.$value["id"].'">'.$value["categoria"].'</option>';
+                  }
+
+                  ?>
+  
+                </select>
+
+              </div>
+
+            </div>
+            <!-- ENTRADA PARA SELECCIONAR proveedor -->
+
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+
+                <select class="form-control input-lg " id="nuevaProveedor" name="nuevaProveedor" required>
+                  
+                  <option value="">Selecionar Proveedor</option>
+
+                  <?php
+
+                  $item = null;
+                  $valor = null;
+
+                  $proveedores = ControladorProveedores::ctrMostrarProveedores($item, $valor);
+
+                  foreach ($proveedores as $key => $value) {
+                    
+                    echo '<option value="'.$value["id"].'">'.$value["nombres"].'</option>';
                   }
 
                   ?>
@@ -342,6 +374,23 @@ MODAL EDITAR PRODUCTO
                 <select class="form-control input-lg"  name="editarCategoria" readonly required>
                   
                   <option id="editarCategoria"></option>
+
+                </select>
+
+              </div>
+
+            </div>
+             <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
+
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+
+                <select class="form-control input-lg"  name="editarProveedor" readonly required>
+                  
+                  <option id="editarProveedor"></option>
 
                 </select>
 

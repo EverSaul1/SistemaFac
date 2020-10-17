@@ -99,6 +99,7 @@ class ControladorProductos{
 				$tabla = "productos";
 
 				$datos = array("id_categoria" => $_POST["nuevaCategoria"],
+								"id_proveedor" => $_POST["nuevaProveedor"],
 							   "codigo" => $_POST["nuevoCodigo"],
 							   "descripcion" => $_POST["nuevaDescripcion"],
 							   "stock" => $_POST["nuevoStock"],
@@ -248,6 +249,7 @@ class ControladorProductos{
 				$tabla = "productos";
 
 				$datos = array("id_categoria" => $_POST["editarCategoria"],
+								"id_proveedor" => $_POST["editarProveedor"],
 							   "codigo" => $_POST["editarCodigo"],
 							   "descripcion" => $_POST["editarDescripcion"],
 							   "stock" => $_POST["editarStock"],
