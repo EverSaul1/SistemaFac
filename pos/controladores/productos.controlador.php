@@ -259,7 +259,7 @@ class ControladorProductos{
 
 				$respuesta = ModeloProductos::mdlEditarProducto($tabla, $datos);
 
-				if($respuesta == "ok"){
+				if(is_array($respuesta == "ok")){
 
 					echo'<script>
 

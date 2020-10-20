@@ -6,6 +6,8 @@ require_once "../modelos/productos.modelo.php";
 require_once "../controladores/categorias.controlador.php";
 require_once "../modelos/categorias.modelo.php";
 
+require_once "../controladores/proveedores.controlador.php";
+require_once "../modelos/proveedores.modelo.php";
 class AjaxProductos{
 
   /*=============================================

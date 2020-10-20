@@ -21,8 +21,11 @@ class ControladorUsuarios{
 				$valor = $_POST["ingUsuario"];
 
 				$respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
-
-				if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
+				if (is_array($respuesta)) {
+					if ($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar) {
+					
+				  
+				//if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
 
 					if($respuesta["estado"] == 1){
 
@@ -37,7 +40,7 @@ class ControladorUsuarios{
 						REGISTRAR FECHA PARA SABER EL ÚLTIMO LOGIN
 						=============================================*/
 
-						date_default_timezone_set('America/Bogota');
+						date_default_timezone_set('America/lima');
 
 						$fecha = date('Y-m-d');
 						$hora = date('H:i:s');
@@ -76,7 +79,7 @@ class ControladorUsuarios{
 				}
 
 			}	
-
+		}
 		}
 
 	}
@@ -241,7 +244,7 @@ class ControladorUsuarios{
 		$tabla = "usuarios";
 
 		$respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
-
+		
 		return $respuesta;
 	}
 

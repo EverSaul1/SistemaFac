@@ -63,7 +63,7 @@ $bloque1 = <<<EOF
 		
 		<tr>
 			
-			<td style="width:150px"><img src="images/logo-negro-bloque.png"></td>
+			<td style="width:150px"><img src="images/logotipo2.png"></td>
 
 			<td style="background-color:white; width:140px">
 				
@@ -73,7 +73,7 @@ $bloque1 = <<<EOF
 					NIT: 71.759.963-9
 
 					<br>
-					Dirección: Calle 44B 92-11
+					Dirección: Jr.Ayacucho 277
 
 				</div>
 
@@ -84,10 +84,10 @@ $bloque1 = <<<EOF
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					Teléfono: 300 786 52 49
+					Celular: +51 995982889
 					
 					<br>
-					ventas@inventorysystem.com
+					redstore@redstore.com
 
 				</div>
 				
@@ -183,10 +183,16 @@ $valorProducto = $item["descripcion"];
 $orden = null;
 
 $respuestaProducto = ControladorProductos::ctrMostrarProductos($itemProducto, $valorProducto, $orden);
+if(is_array($respuestaProducto)){
+	$valorUnitario = number_format($respuestaProducto["precio_venta"],2);
+}
+	$precioTotal = number_format($item["total"], 2);
 
-$valorUnitario = number_format($respuestaProducto["precio_venta"], 2);
 
-$precioTotal = number_format($item["total"], 2);
+
+
+
+
 
 $bloque4 = <<<EOF
 
@@ -202,11 +208,11 @@ $bloque4 = <<<EOF
 				$item[cantidad]
 			</td>
 
-			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">$ 
+			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">S/.
 				$valorUnitario
 			</td>
 
-			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">$ 
+			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">S/.
 				$precioTotal
 			</td>
 
@@ -221,6 +227,7 @@ EOF;
 $pdf->writeHTML($bloque4, false, false, false, false, '');
 
 }
+
 
 // ---------------------------------------------------------
 
@@ -247,7 +254,7 @@ $bloque5 = <<<EOF
 			</td>
 
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
-				$ $neto
+				S/. $neto
 			</td>
 
 		</tr>
@@ -261,7 +268,7 @@ $bloque5 = <<<EOF
 			</td>
 		
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
-				$ $impuesto
+			S/. $impuesto
 			</td>
 
 		</tr>
@@ -275,7 +282,7 @@ $bloque5 = <<<EOF
 			</td>
 			
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
-				$ $total
+				S/. $total
 			</td>
 
 		</tr>

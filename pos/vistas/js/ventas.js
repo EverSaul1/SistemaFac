@@ -277,7 +277,7 @@ $(".btnAgregarProducto").click(function(){
 
 			  '<!-- Descripción del producto -->'+
 	          
-	          '<div class="col-xs-6" style="padding-right:0px">'+
+	          '<div class="col-xs-5" style="padding-right:0px">'+
 	          
 	            '<div class="input-group">'+
 	              
@@ -303,11 +303,11 @@ $(".btnAgregarProducto").click(function(){
 
 	          '<!-- Precio del producto -->'+
 
-	          '<div class="col-xs-3 ingresoPrecio" style="padding-left:0px">'+
+	          '<div class="col-xs-4 ingresoPrecio" style="padding-left:0px">'+
 
 	            '<div class="input-group">'+
 
-	              '<span class="input-group-addon"><i class="ion ion-social-usd"></i></span>'+
+	              '<span class="input-group-addon"><i class="ion ion-social">S/.</i></span>'+
 	                 
 	              '<input type="text" class="form-control nuevoPrecioProducto" precioReal="" name="nuevoPrecioProducto" readonly required>'+
 	 
@@ -771,7 +771,7 @@ IMPRIMIR FACTURA
 $(".tablas").on("click", ".btnImprimirFactura", function(){
 
 	var codigoVenta = $(this).attr("codigoVenta");
-
+	//window.open("extensiones/tcpdf/pdf/pdf.php ","_blank");
 	window.open("extensiones/tcpdf/pdf/factura.php?codigo="+codigoVenta, "_blank");
 
 })

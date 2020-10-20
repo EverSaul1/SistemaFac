@@ -218,7 +218,7 @@ class ControladorVentas{
 
 				$listaProductos_2 = json_decode($listaProductos, true);
 
-				$totalProductosComprados_2 = array();
+				$totalProductosComprados_2 = is_array();
 
 				foreach ($listaProductos_2 as $key => $value) {
 

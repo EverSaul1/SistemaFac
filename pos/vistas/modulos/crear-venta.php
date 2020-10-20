@@ -184,7 +184,7 @@ if($_SESSION["perfil"] == "Especial"){
                   ENTRADA IMPUESTOS Y TOTAL
                   ======================================-->
                   
-                  <div class="col-xs-8 pull-right">
+                  <div class="col-xs-10 pull-right">
                     
                     <table class="table">
 
@@ -200,8 +200,8 @@ if($_SESSION["perfil"] == "Especial"){
                       <tbody>
                       
                         <tr>
-                          
-                          <td style="width: 50%">
+                    
+                          <td class=" col-xs-4" >
                             
                             <div class="input-group">
                            
@@ -211,17 +211,17 @@ if($_SESSION["perfil"] == "Especial"){
 
                                <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>
 
-                              <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                              <span class="input-group-addon">%</span>
                         
                             </div>
 
                           </td>
 
-                           <td style="width: 50%">
+                           <td class="col-xs-6">
                             
                             <div class="input-group">
                            
-                              <span class="input-group-addon"><i class="ion ion-social">S/.</i></span>
+                              <span class="input-group-addon">S/.</span>
 
                               <input type="text" class="form-control input-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00000" readonly required>
 
@@ -257,6 +257,8 @@ if($_SESSION["perfil"] == "Especial"){
                       <select class="form-control" id="nuevoMetodoPago" name="nuevoMetodoPago" required>
                         <option value="">Seleccione método de pago</option>
                         <option value="Efectivo">Efectivo</option>
+                        <option value="TC">Tarjeta Crédito</option>
+                        <option value="TD">Tarjeta Débito</option>    
                                         
                       </select>    
 
@@ -420,7 +422,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'999999999'" data-mask required>
+                <input type="number" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'999999999'" data-mask required>
 
               </div>
 

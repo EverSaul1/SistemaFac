@@ -182,7 +182,7 @@ MODAL AGREGAR CATEGORÍA
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCelular" placeholder="Celular" required>
+                <input type="number" class="form-control input-lg" name="nuevaCelular" placeholder="Celular" required>
 
               </div>
 
@@ -193,7 +193,7 @@ MODAL AGREGAR CATEGORÍA
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaCorreo" placeholder="Correo" required>
+                <input type="email" class="form-control input-lg" name="nuevaCorreo" placeholder="Correo" required>
 
               </div>
 
