@@ -85,7 +85,7 @@
 					
 					<li>
 
-						<a href="#">
+						<a href="stocks">
 							
 							<i class="fa fa-circle-o"></i>
 							<span>Administrar Stock</span>
@@ -103,7 +103,8 @@
 
 						</a>
 
-					</li>';
+					</li>'
+					;
 
 				
 

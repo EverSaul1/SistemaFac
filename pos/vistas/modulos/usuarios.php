@@ -239,11 +239,7 @@ MODAL AGREGAR USUARIO
 
              <div class="form-group">
               
-              <div class="panel">SUBIR FOTO</div>
-
-              <input type="file" class="nuevaFoto" name="nuevaFoto">
-
-              <p class="help-block">Peso máximo de la foto 2MB</p>
+              
 
               <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 
@@ -384,11 +380,7 @@ MODAL EDITAR USUARIO
 
              <div class="form-group">
               
-              <div class="panel">SUBIR FOTO</div>
-
-              <input type="file" class="nuevaFoto" name="editarFoto">
-
-              <p class="help-block">Peso máximo de la foto 2MB</p>
+             
 
               <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizarEditar" width="100px">
 

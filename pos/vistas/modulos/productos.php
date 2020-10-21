@@ -289,11 +289,11 @@ MODAL AGREGAR PRODUCTO
 
              <div class="form-group">
               
-              <div class="panel">SUBIR IMAGEN</div>
+              
 
-              <input type="file" class="nuevaImagen" name="nuevaImagen">
+              
 
-              <p class="help-block">Peso máximo de la imagen 2MB</p>
+              <p class="help-block"></p>
 
               <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 
@@ -508,11 +508,7 @@ MODAL EDITAR PRODUCTO
 
              <div class="form-group">
               
-              <div class="panel">SUBIR IMAGEN</div>
-
-              <input type="file" class="nuevaImagen" name="editarImagen">
-
-              <p class="help-block">Peso máximo de la imagen 2MB</p>
+             
 
               <img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 

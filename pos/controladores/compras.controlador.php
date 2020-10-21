@@ -4,7 +4,7 @@
 class ControladorCompras{
 
     static public function ctrMonstrarCompras($item, $valor){
-        $tabla = "compras";
+        $tabla = "ingresos";
         $respuesta = modeloCompras::mlMostrarCompras($tabla,$valor,$item);
         return $respuesta;
 
@@ -17,6 +17,7 @@ class ControladorCompras{
             $listaProductos = json_decode($_POST["listaProductos"],true);
 
             foreach($listaProductos as $key => $value){
+
                 $tablaProductos = "productos";
                 $item = "id";
                 $valor = $value["id"];
@@ -29,6 +30,35 @@ class ControladorCompras{
 
                 
             }
+            $tabla = "ingresos";
+
+            $datos = array("codigo"=>$_POST["nuevaCompra"],
+                            "id_especial"=>$_POST["idVendedor"],
+                            "productos"=>$_POST["listaProductos"]);
+                                            
+              
+            $respuesta = modeloCompras::mdlIngresarStock($tabla, $datos);
+            
+			if($respuesta == "ok"){
+
+				echo'<script>
+				localStorage.removeItem("rango");
+				swal({
+					  type: "success",
+					  title: "El stock ha sido guardado correctamente",
+					  showConfirmButton: true,
+					  confirmButtonText: "Cerrar"
+					  }).then((result) => {
+								if (result.value) {
+								window.location = "stocks";
+								}
+							})
+				</script>';
+          
+            }
+            
+            
+
         }
 
     }

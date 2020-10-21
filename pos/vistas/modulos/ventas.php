@@ -73,6 +73,7 @@ if($_SESSION["perfil"] == "Especial"){
            <th>Código factura</th>
            <th>Cliente</th>
            <th>Vendedor</th>
+           <th>Cantidad - Productos</th>
            <th>Forma de pago</th>
            <th>Neto</th>
            <th>Total</th> 
@@ -121,9 +122,14 @@ if($_SESSION["perfil"] == "Especial"){
 
                   $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
 
-                  echo '<td>'.$respuestaUsuario["nombre"].'</td>
+                  echo '<td>'.$respuestaUsuario["nombre"].'</td><td>';
 
-                  <td>'.$value["metodo_pago"].'</td>
+                  $productos = json_decode($value["productos"], true);
+                  foreach($productos as $key2 => $value2){
+                      echo $value2["cantidad"].' - '. $value2["descripcion"].'<br>';
+                  }
+
+                  echo '</td><td>'.$value["metodo_pago"].'</td>
 
                   <td>S/. '.number_format($value["neto"],2).'</td>
 
