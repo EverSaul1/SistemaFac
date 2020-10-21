@@ -12,8 +12,27 @@ class ControladorCompras{
 
     static public function crtGuardarStock(){
 
+        
         if(isset($_POST["nuevaCompra"])){
 
+            if($_POST["listaProductos"] == ""){
+
+                echo'<script>
+            swal({
+                  type: "error",
+                  title: "El stock no se ha ejecuta si no hay productos",
+                  showConfirmButton: true,
+                  confirmButtonText: "Cerrar"
+                  }).then(function(result){
+                            if (result.value) {
+                            window.location = "crear-compras";
+                            }
+                        })
+            </script>';
+    
+            return;
+        }
+    
             $listaProductos = json_decode($_POST["listaProductos"],true);
 
             foreach($listaProductos as $key => $value){
