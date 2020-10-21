@@ -49,15 +49,7 @@ if($_SESSION["perfil"] == "Especial"){
 
       </a>
 
-       <button type="button" class="btn btn-default pull-right" id="daterange-btn">
-         
-          <span>
-            <i class="fa fa-calendar"></i> Rango de fecha
-          </span>
-
-          <i class="fa fa-caret-down"></i>
-
-       </button>
+      
 
     </div>
 
@@ -75,7 +67,7 @@ if($_SESSION["perfil"] == "Especial"){
         <th>Cantidad - Producto</th>
          <th>Fecha</th> 
         
-         <th>Acciones</th>
+         
 
        </tr> 
 
@@ -110,17 +102,7 @@ if($_SESSION["perfil"] == "Especial"){
   
            
   
-            <td>
-  
-              <div class="btn-group">
-                  
-                
-  
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-  
-              </div>  
-  
-            </td>
+           
   
           </tr>';
         }
