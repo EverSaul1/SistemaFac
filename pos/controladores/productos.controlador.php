@@ -250,7 +250,7 @@ class ControladorProductos{
 
 				$datos = array("id_categoria" => $_POST["editarCategoria"],
 								"id_proveedor" => $_POST["editarProveedor"],
-							   "codigo" => $_POST["editarCodigo"],
+							  	"codigo" => $_POST["editarCodigo"],
 							   "descripcion" => $_POST["editarDescripcion"],
 							   "stock" => $_POST["editarStock"],
 							   "precio_compra" => $_POST["editarPrecioCompra"],
@@ -259,7 +259,7 @@ class ControladorProductos{
 
 				$respuesta = ModeloProductos::mdlEditarProducto($tabla, $datos);
 
-				if(is_array($respuesta == "ok")){
+				if(array($respuesta == "ok")){
 
 					echo'<script>
 

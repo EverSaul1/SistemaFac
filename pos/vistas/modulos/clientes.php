@@ -58,11 +58,8 @@ if($_SESSION["perfil"] == "Especial"){
            
            <th style="width:10px">#</th>
            <th>Nombre</th>
-           <th>Documento ID</th>
-           <th>Email</th>
-           <th>Teléfono</th>
+           <th>Documento DNI</th>
            <th>Última compra</th>
-           
            <th>Acciones</th>
 
          </tr> 
@@ -88,10 +85,6 @@ if($_SESSION["perfil"] == "Especial"){
                     <td>'.$value["nombre"].'</td>
 
                     <td>'.$value["documento"].'</td>
-
-                    <td>'.$value["email"].'</td>
-
-                    <td>'.$value["telefono"].'</td>
 
                     <td>'.$value["ultima_compra"].'</td>
 
@@ -185,44 +178,13 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="test" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" data-inputmask="'mask':'99999999'" data-mask  required>
+                <input type="test" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" data-inputmask="'mask':'99999999'" data-mask>
 
               </div>
 
             </div>
 
-            <!-- ENTRADA PARA EL EMAIL -->
-            
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar email" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL TELÉFONO -->
-            
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'999999999'" data-mask required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA LA DIRECCIÓN -->
-            
-
-             <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
+           
             
             
   
@@ -311,7 +273,7 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text"  class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" data-inputmask="'mask':'99999999'" data-mask  required>
+                <input type="text"  class="form-control input-lg" name="editarDocumentoId" id="editarDocumentoId" data-inputmask="'mask':'99999999'" data-mask >
 
               </div>
 
@@ -319,31 +281,7 @@ MODAL EDITAR CLIENTE
 
             <!-- ENTRADA PARA EL EMAIL -->
             
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="editarEmail" id="editarEmail" required>
-
-              </div>
-
-            </div>
-
-            <!-- ENTRADA PARA EL TELÉFONO -->
             
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
-
-                <input type="text" class="form-control input-lg" name="editarTelefono" id="editarTelefono" data-inputmask="'mask':'999999999'" data-mask required>
-
-              </div>
-
-            </div>
 
             <!-- ENTRADA PARA LA DIRECCIÓN -->
             

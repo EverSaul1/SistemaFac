@@ -366,33 +366,71 @@ MODAL EDITAR PRODUCTO
             <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
 
             <div class="form-group">
+            <h5 style="font-weight:900;">Categoria:</h5>
               
               <div class="input-group">
               
+              
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
+                
 
-                <select class="form-control input-lg"  name="editarCategoria" readonly required>
+                <select class="form-control input-lg"  name="editarCategoria"  required>
                   
                   <option id="editarCategoria"></option>
+                  <?php
+
+                  $item = null;
+                  $valor = null;
+
+                  $categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+
+                  foreach ($categorias as $key => $value) {
+                    
+                    echo '<option value="'.$value["id"].'">'.$value["categoria"].'</option>';
+                  }
+
+                  ?>
+  
+                </select>
 
                 </select>
 
               </div>
 
             </div>
-             <!-- ENTRADA PARA SELECCIONAR CATEGORÍA -->
+             <!-- ENTRADA PARA SELECCIONAR Proveedor -->
 
              <div class="form-group">
+             <h5 style="font-weight:900;">Proveedor:</h5>
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-th"></i></span> 
 
-                <select class="form-control input-lg"  name="editarProveedor" readonly required>
+                <select class="form-control input-lg"  name="editarProveedor"  required>
                   
                   <option id="editarProveedor"></option>
+                  
+                  
+               
 
+                  <?php
+
+                  $item = null;
+                  $valor = null;
+
+                  $proveedores = ControladorProveedores::ctrMostrarProveedores($item, $valor);
+
+                  foreach ($proveedores as $key => $value) {
+                    
+                    echo '<option value="'.$value["id"].'">'.$value["nombres"].'</option>';
+                  }
+
+                  ?>
+  
                 </select>
+
+              
 
               </div>
 
@@ -401,6 +439,7 @@ MODAL EDITAR PRODUCTO
             <!-- ENTRADA PARA EL CÓDIGO -->
             
             <div class="form-group">
+            <h5 style="font-weight:900;">Codigo:</h5>
               
               <div class="input-group">
               
@@ -415,7 +454,7 @@ MODAL EDITAR PRODUCTO
             <!-- ENTRADA PARA LA DESCRIPCIÓN -->
 
              <div class="form-group">
-              
+             <h5 style="font-weight:900;">Descripcion:</h5>              
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span> 
@@ -429,6 +468,8 @@ MODAL EDITAR PRODUCTO
              <!-- ENTRADA PARA STOCK -->
 
              <div class="form-group">
+             
+             <h5 style="font-weight:900;">Stock:</h5>
               
               <div class="input-group">
               
@@ -443,6 +484,7 @@ MODAL EDITAR PRODUCTO
              <!-- ENTRADA PARA PRECIO COMPRA -->
 
              <div class="form-group row">
+             <h5 style="font-weight:900;">Precio Compra - Precio Venta:</h5>
 
                 <div class="col-xs-6">
                 
@@ -459,6 +501,8 @@ MODAL EDITAR PRODUCTO
                 <!-- ENTRADA PARA PRECIO VENTA -->
 
                 <div class="col-xs-6">
+
+                
                 
                   <div class="input-group">
                   

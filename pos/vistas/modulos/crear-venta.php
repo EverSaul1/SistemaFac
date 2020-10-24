@@ -394,7 +394,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" required>
+                <input type="text" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento"  data-inputmask="'mask':'99999999'" data-mask required>
 
               </div>
 
@@ -402,31 +402,11 @@ MODAL AGREGAR CLIENTE
 
             <!-- ENTRADA PARA EL EMAIL -->
             
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-envelope"></i></span> 
-
-                <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar email" required>
-
-              </div>
-
-            </div>
+            
 
             <!-- ENTRADA PARA EL TELÉFONO -->
             
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
-
-                <input type="number" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'999999999'" data-mask required>
-
-              </div>
-
-            </div>
+            
 
            
              
