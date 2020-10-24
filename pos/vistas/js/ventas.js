@@ -771,8 +771,19 @@ IMPRIMIR FACTURA
 $(".tablas").on("click", ".btnImprimirFactura", function(){
 
 	var codigoVenta = $(this).attr("codigoVenta");
-	//window.open("extensiones/tcpdf/pdf/pdf.php ","_blank");
-	window.open("extensiones/tcpdf/pdf/factura.php?codigo="+codigoVenta, "_blank");
+	var impuestoF = $(this).attr("impuestoF");
+
+	if(impuestoF==0){
+
+		window.open("extensiones/tcpdf/pdf/pdf.php ","_blank");
+
+	}else{
+
+		window.open("extensiones/tcpdf/pdf/factura.php?codigo="+codigoVenta, "_blank");
+	}
+	
+	
+	
 
 })
 

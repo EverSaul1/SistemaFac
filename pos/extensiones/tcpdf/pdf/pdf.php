@@ -54,6 +54,7 @@ $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'colo
 $html = <<<EOF
 
 <img src="images/image_demo.jpg" style="width:300px">
+<h1>ESTO ES UNA BOLETA </h1>
 
 EOF;
 

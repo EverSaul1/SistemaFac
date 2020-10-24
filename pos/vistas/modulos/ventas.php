@@ -141,7 +141,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                     <div class="btn-group">
                         
-                      <button class="btn btn-info btnImprimirFactura" codigoVenta="'.$value["codigo"].'">
+                      <button class="btn btn-info btnImprimirFactura" impuestoF="'.$value["impuesto"].'" codigoVenta="'.$value["codigo"].'">
 
                         <i class="fa fa-print"></i>
 
