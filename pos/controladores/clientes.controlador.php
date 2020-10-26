@@ -33,7 +33,7 @@ class ControladorClientes{
 						  }).then(function(result){
 									if (result.value) {
 
-									window.location = "clientes";
+									window.location = "crear-venta";
 
 									}
 								})

@@ -394,8 +394,8 @@ $(".formularioVenta").on("change", "select.nuevaDescripcionProducto", function()
 
   	      // AGRUPAR PRODUCTOS EN FORMATO JSON
 
-	        listarProductos()
-
+	        listarProductos();
+			agregarImpuesto();
       	}
 
       })
@@ -604,6 +604,65 @@ $("#nuevoMetodoPago").change(function(){
 
 	
 
+})
+/*=============================================
+Comprobante
+=============================================*/
+
+$("#nuevoComprobante").change(function(){
+
+	var metodoComprobante = $(this).val();
+
+
+	if(metodoComprobante == "Factura"){
+		
+		$(this).parent().parent().parent().children(".cajasComprobantes").html(
+			
+			'<div class="col-xs-4 pull-right" style="padding-left:0px">'+
+			
+				'<div class="input-group">'+
+					
+					'<input type="number" class="form-control" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" value="18"  readonly required >'+
+
+					'<input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>'+
+
+					'<input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>'+
+
+					'<span class="input-group-addon">%</span>'+
+					
+				'</div>'+
+
+			'</div>'
+
+			
+
+		)
+		agregarImpuesto();
+		
+	}else{
+		$(this).parent().parent().parent().children(".cajasComprobantes").html(
+			
+			'<div class="col-xs-4 pull-right" style="padding-left:0px">'+
+				
+				'<div class="input-group">'+
+
+					'<input type="number" class="form-control"  id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" value="0"  readonly required >'+
+
+					'<input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>'+
+
+					'<input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>'+
+
+					'<span class="input-group-addon">%</span>'+
+					
+				'</div>'+
+
+			'</div>'
+
+			
+
+		)
+		agregarImpuesto();
+	}
 })
 
 /*=============================================

@@ -122,7 +122,7 @@ if($_SESSION["perfil"] == "Especial"){
                 ENTRADA DEL CLIENTE
                 ======================================--> 
 
-                <div class="form-group">
+                <div class="form-group ">
                   
                   <div class="input-group">
                     
@@ -157,7 +157,7 @@ if($_SESSION["perfil"] == "Especial"){
                   </div>
                 
                 </div>
-
+               
                 <!--=====================================
                 ENTRADA PARA AGREGAR PRODUCTO
                 ======================================--> 
@@ -170,6 +170,9 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <input type="hidden" id="listaProductos" name="listaProductos">
 
+                
+
+
                 <!--=====================================
                 BOTÓN PARA AGREGAR PRODUCTO
                 ======================================-->
@@ -178,20 +181,60 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <hr>
 
+                  <!--=====================================
+                ENTRADA DEL CLIENTE
+                ======================================--> 
+                <div class="form-group row">
+
+                  <div class="col-xs-5" style="padding-right:0px">
+
+                    <div class="input-group">
+                    
+                    <span class="input-group-addon"><i class="fa fa-file"></i></span>
+
+                     <select class="form-control" id="nuevoComprobante" name="nuevoComprobante" required>
+
+                        <option value="">Seleccione el tipo de comprobante </option>
+
+                        <option value="Boleta">Boleta</option>
+
+                        <option value="Factura">Factura</option>
+                      
+                                    
+                      </select>    
+
+                     </div>
+                     
+                  </div>
+                       
+
+                        <div class="cajasComprobantes"></div>                           
+                        
+                        <input type="hidden" id="listaComprobantes" name="listaComprobantes">
+                  
+
+                </div>
+                
+                       </br>
                 <div class="row">
+
+               
+                
 
                   <!--=====================================
                   ENTRADA IMPUESTOS Y TOTAL
                   ======================================-->
                   
-                  <div class="col-xs-10 pull-right">
-                    
+                  <div class="col-xs-6 pull-right">
+
+                  
+                  
                     <table class="table">
 
                       <thead>
 
                         <tr>
-                          <th>Impuesto</th>
+                        
                           <th>Total</th>      
                         </tr>
 
@@ -199,25 +242,11 @@ if($_SESSION["perfil"] == "Especial"){
 
                       <tbody>
                       
+
+                      
                         <tr>
-                    
-                          <td class=" col-xs-4" >
-                            
-                            <div class="input-group">
-                           
-                              <input type="number" class="form-control input-lg" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" value="0"  required >
 
-                               <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
-
-                               <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>
-
-                              <span class="input-group-addon">%</span>
-                        
-                            </div>
-
-                          </td>
-
-                           <td class="col-xs-6">
+                           <td class="col-xs-2">
                             
                             <div class="input-group">
                            
@@ -231,18 +260,24 @@ if($_SESSION["perfil"] == "Especial"){
                             </div>
 
                           </td>
+                          
 
-                        </tr>
+                             </tr>
 
                       </tbody>
 
                     </table>
 
                   </div>
+                  </div>
+                  
 
-                </div>
+               
+                
+                
 
                 <hr>
+               
 
                 <!--=====================================
                 ENTRADA MÉTODO DE PAGO
@@ -262,7 +297,7 @@ if($_SESSION["perfil"] == "Especial"){
                                         
                       </select>    
 
-                    </div>
+                      </div>
 
                   </div>
 
@@ -394,7 +429,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento"  data-inputmask="'mask':'99999999'" data-mask required>
+                <input type="text" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento"  data-inputmask="'mask':'99999999'" data-mask >
 
               </div>
 

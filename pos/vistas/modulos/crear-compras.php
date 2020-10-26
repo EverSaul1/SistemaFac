@@ -73,14 +73,17 @@
                     if(!$compras){
 
                         echo '<input type="text" class="form-control" id="nuevaCompra" name="nuevaCompra" value="10001" readonly>';
+
                     }else{
+
                         foreach ($compras as $key => $value){
+                          
 
                         }
-                    
-                        $codigo = $value["codigo"] +1;
-
+                        $codigo = $value["codigo"] + 1;
+                        
                         echo '<input type="text" class="form-control" id="nuevaCompra" name="nuevaCompra" value="'.$codigo.'" readonly>';
+                        
                     }
                     ?>
                     
