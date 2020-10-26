@@ -637,6 +637,7 @@ $("#nuevoComprobante").change(function(){
 			
 
 		)
+		
 		agregarImpuesto();
 		
 	}else{

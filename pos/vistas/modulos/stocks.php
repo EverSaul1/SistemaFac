@@ -49,7 +49,8 @@
          <th style="width:10px">#</th>
          <th>Código</th>
          <th>Usuario</th>
-        <th>Cantidad - Producto</th>
+         <th>Producto </th>
+        <th> Cantidad</th>
          <th>Fecha</th> 
         
          
@@ -70,7 +71,9 @@
             <td>'.($key+1).'</td>
   
             <td>'.$value["codigo"].'</td>';
-                  
+
+            
+
             $itemUsuario = "id";
             $valorUsuario = $value["id_especial"];
 
@@ -80,16 +83,19 @@
   
             $productos = json_decode($value["productos"], true);
             foreach($productos as $key2 => $value2){
-                echo $value2["cantidad"].' - '. $value2["descripcion"].'<br>';
+                echo $value2["descripcion"].'<br>';
             }
-  
-            echo '</td><td>'.$value["fecha"].'</td>
-  
-           
-  
-           
-  
-          </tr>';
+
+             echo '</td><td>';
+             $Cantidad = json_decode($value["productos"], true);
+            foreach($Cantidad as $key3 => $value3){
+               echo  $value3["cantidad"].'<br>';
+            }
+            echo '</td><td>'.$value["fecha"].'</td>';
+
+            
+
+          ' </tr>';
         }
 
       ?>

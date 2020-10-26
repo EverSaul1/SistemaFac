@@ -70,6 +70,7 @@ if($_SESSION["perfil"] == "Especial"){
          <tr>
            
            <th style="width:10px">#</th>
+           <th>Comprobante</th>
            <th>Código factura</th>
            <th>Cliente</th>
            <th>Vendedor</th>
@@ -107,6 +108,8 @@ if($_SESSION["perfil"] == "Especial"){
            echo '<tr>
 
                   <td>'.($key+1).'</td>
+
+                  <td>'.$value["comprobante"].'</td>
 
                   <td>'.$value["codigo"].'</td>';
 
