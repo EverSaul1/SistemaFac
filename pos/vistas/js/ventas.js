@@ -835,7 +835,7 @@ $(".tablas").on("click", ".btnImprimirFactura", function(){
 
 	if(impuestoF==0){
 
-		window.open("extensiones/tcpdf/pdf/pdf.php ","_blank");
+		window.open("extensiones/tcpdf/pdf/pdf.php?codigo="+codigoVenta, "_blank")
 
 	}else{
 
