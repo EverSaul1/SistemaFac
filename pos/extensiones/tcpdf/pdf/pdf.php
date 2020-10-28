@@ -70,7 +70,7 @@ $bloque1 = <<<EOF
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					NIT: 71.759.963-9
+					R.U.C. 1002448624
 
 					<br>
 					Dirección: Jr.Ayacucho 277
@@ -242,34 +242,6 @@ $bloque5 = <<<EOF
 			<td style="border-bottom: 1px solid #666; background-color:white; width:100px; text-align:center"></td>
 
 			<td style="border-bottom: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center"></td>
-
-		</tr>
-		
-		<tr>
-		
-			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
-
-			<td style="border: 1px solid #666;  background-color:white; width:100px; text-align:center">
-				Neto:
-			</td>
-
-			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
-				S/. $neto
-			</td>
-
-		</tr>
-
-		<tr>
-
-			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
-
-			<td style="border: 1px solid #666; background-color:white; width:100px; text-align:center">
-				Impuesto:
-			</td>
-		
-			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
-			S/. $impuesto
-			</td>
 
 		</tr>
 
