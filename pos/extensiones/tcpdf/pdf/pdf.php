@@ -63,14 +63,18 @@ $bloque1 = <<<EOF
 		
 		<tr>
 			
-			<td style="width:150px"><img src="images/logotipo2.png"></td>
+			<td style="width:150px"><img src="images/logotipo2.png">
+				<div style="font-size:7px; text-align:center;">
+					PRODUCTOS DE TENDENCIA E INNOVADORAS A SU ALCANCE
+				</div>
+			</td>
 
 			<td style="background-color:white; width:140px">
 				
-				<div style="font-size:8.5px; text-align:right; line-height:15px;">
+				<div style="font-size:8.5px; text-align:center; line-height:15px;">
 					
 					<br>
-					R.U.C. 1002448624
+					R.U.C. 10024486244
 
 					<br>
 					Dirección: Jr.Ayacucho 277
@@ -81,13 +85,13 @@ $bloque1 = <<<EOF
 
 			<td style="background-color:white; width:140px">
 
-				<div style="font-size:8.5px; text-align:right; line-height:15px;">
+				<div style="font-size:8.5px; text-align:center; line-height:15px;">
 					
 					<br>
 					Celular: +51 995982889
 					
 					<br>
-					redstore@redstore.com
+					RedStore.pe
 
 				</div>
 				
@@ -250,7 +254,7 @@ $bloque5 = <<<EOF
 			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
 
 			<td style="border: 1px solid #666; background-color:white; width:100px; text-align:center">
-				Total:
+				TOTAL:
 			</td>
 			
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">

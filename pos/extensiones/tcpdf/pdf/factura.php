@@ -59,45 +59,49 @@ $pdf->AddPage();
 
 $bloque1 = <<<EOF
 
-	<table>
+<table>
 		
-		<tr>
+<tr>
+	
+	<td style="width:150px"><img src="images/logotipo2.png">
+		<div style="font-size:7px; text-align:center;">
+			PRODUCTOS DE TENDENCIA E INNOVADORAS A SU ALCANCE
+		</div>
+	</td>
+
+	<td style="background-color:white; width:140px">
+		
+		<div style="font-size:8.5px; text-align:center; line-height:15px;">
 			
-			<td style="width:150px"><img src="images/logotipo2.png"></td>
+			<br>
+			R.U.C. 10024486244
 
-			<td style="background-color:white; width:140px">
-				
-				<div style="font-size:8.5px; text-align:right; line-height:15px;">
-					
-					<br>
-					NIT: 71.759.963-9
+			<br>
+			Dirección: Jr.Ayacucho 277
 
-					<br>
-					Dirección: Jr.Ayacucho 277
+		</div>
 
-				</div>
+	</td>
 
-			</td>
+	<td style="background-color:white; width:140px">
 
-			<td style="background-color:white; width:140px">
+		<div style="font-size:8.5px; text-align:center; line-height:15px;">
+			
+			<br>
+			Celular: +51 995982889
+			
+			<br>
+			RedStore.pe
 
-				<div style="font-size:8.5px; text-align:right; line-height:15px;">
-					
-					<br>
-					Celular: +51 995982889
-					
-					<br>
-					redstore@redstore.com
+		</div>
+		
+	</td>
 
-				</div>
-				
-			</td>
+	<td style="background-color:white; width:110px; text-align:center; color:red"><br><br>FACTURA N.<br>$valorVenta</td>
 
-			<td style="background-color:white; width:110px; text-align:center; color:red"><br><br>FACTURA N.<br>$valorVenta</td>
+</tr>
 
-		</tr>
-
-	</table>
+</table>
 
 EOF;
 
@@ -250,7 +254,7 @@ $bloque5 = <<<EOF
 			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
 
 			<td style="border: 1px solid #666;  background-color:white; width:100px; text-align:center">
-				Neto:
+				SUB TOTAL:
 			</td>
 
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
@@ -264,7 +268,7 @@ $bloque5 = <<<EOF
 			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
 
 			<td style="border: 1px solid #666; background-color:white; width:100px; text-align:center">
-				Impuesto:
+				I.G.V:
 			</td>
 		
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
@@ -278,7 +282,7 @@ $bloque5 = <<<EOF
 			<td style="border-right: 1px solid #666; color:#333; background-color:white; width:340px; text-align:center"></td>
 
 			<td style="border: 1px solid #666; background-color:white; width:100px; text-align:center">
-				Total:
+				TOTAL:
 			</td>
 			
 			<td style="border: 1px solid #666; color:#333; background-color:white; width:100px; text-align:center">
