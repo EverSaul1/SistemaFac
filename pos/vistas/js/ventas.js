@@ -941,3 +941,38 @@ $(document).ready(function(){
 
 	$('.select2').select2();
 });
+/*=============================================
+REVISAR SI EL DNI YA ESTA EN LA BASE DE DATOS
+=============================================*/
+
+$("#nuevoDocumentoId").change(function(){
+
+	$(".alert").remove();
+
+	var cliente = $(this).val();
+
+	var datos = new FormData();
+	datos.append("validarCliente", cliente);
+
+	 $.ajax({
+	    url:"ajax/clientes.ajax.php",
+	    method:"POST",
+	    data: datos,
+	    cache: false,
+	    contentType: false,
+	    processData: false,
+	    dataType: "json",
+	    success:function(respuesta){
+	    	
+	    	if(respuesta){
+
+	    		$("#nuevoDocumentoId").parent().after('<div class="alert alert-warning">Este DNI ya esta registrado</div>');
+
+	    		$("#nuevoDocumentoId").val("");
+
+	    	}
+
+	    }
+
+	})
+})

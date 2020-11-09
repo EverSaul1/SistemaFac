@@ -22,8 +22,25 @@ class AjaxClientes{
 
 
 	}
+	/*=============================================
+	VALIDAR NO REPETIR Cliente
+	=============================================*/	
+
+	public $validarCliente;
+
+	public function ajaxValidarCliente(){
+
+		$item = "documento";
+		$valor = $this->validarCliente;
+
+		$respuesta = ControladorClientes::ctrMostrarClientes($item, $valor);
+
+		echo json_encode($respuesta);
+
+	}
 
 }
+
 
 /*=============================================
 EDITAR CLIENTE
@@ -34,5 +51,16 @@ if(isset($_POST["idCliente"])){
 	$cliente = new AjaxClientes();
 	$cliente -> idCliente = $_POST["idCliente"];
 	$cliente -> ajaxEditarCliente();
+
+}
+/*=============================================
+VALIDAR NO REPETIR CLiENTE
+=============================================*/
+
+if(isset( $_POST["validarCliente"])){
+
+	$valCliente = new AjaxClientes();
+	$valCliente -> validarCliente = $_POST["validarCliente"];
+	$valCliente -> ajaxvalidarCliente();
 
 }

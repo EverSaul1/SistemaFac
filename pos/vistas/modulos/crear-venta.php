@@ -429,7 +429,7 @@ MODAL AGREGAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" min="0" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento"  data-inputmask="'mask':'99999999'" data-mask >
+                <input type="text" min="0" class="form-control input-lg" name="nuevoDocumentoId" id="nuevoDocumentoId" placeholder="Ingresar documento"  data-inputmask="'mask':'99999999'" data-mask >
 
               </div>
 
